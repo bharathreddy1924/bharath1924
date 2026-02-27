@@ -16,7 +16,7 @@ app.post("/students", (req, res) => {
   if (id === undefined || !name || !mobile) {
     return res.status(400).json({ message: "id, name and mobile are required" });
   }
-
+// updated version
   const numericId = Number(id);
 
   const exists = students.find(s => s.id === numericId);
